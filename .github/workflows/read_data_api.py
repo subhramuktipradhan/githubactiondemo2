@@ -4,5 +4,5 @@ import pandas as pd
 import response
 
 data=requests.get("https://jsonplaceholder.typicode.com/users")
-j=response.json
+j=response.json(data)
 df=pd.DataFrame(j)
